@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-
+{% load staticfiles %}
 <html>
   <head>
-    <title>Project 2 Application</title>
-
-    <!--Including CSS,Javascript and JQuery Files-->
-	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Project 2</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}"/>
   </head>
   <body>
-    <h1>Here I am including the Template from templates\templates Folder</h1>
-
-    {{ insert_me }}
-
+    <h1> It's Working !!</h1>
+    <p>Go to users/ to check the User's List</p>
+    <img src="{% static "images/dog.jpg" %}" alt="Dog">
   </body>
 </html>
