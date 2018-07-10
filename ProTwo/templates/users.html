@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Users</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please sign up here.</h1>
+      <form method="POST">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+  </body>
+</html>
